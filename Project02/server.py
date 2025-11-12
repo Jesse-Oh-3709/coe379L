@@ -9,7 +9,7 @@ app = Flask(__name__)
 MODEL_PATH = os.path.join("artifacts", "best_model.keras")
 SUMMARY_PATH = os.path.join("artifacts", "model_summary.json")
 
-model = tf.keras.models.load_model(MODEL_PATH)
+model = tf.keras.models.load_model(MODEL_PATH, compile=False)
 with open(SUMMARY_PATH, "r") as f:
     model_summary = json.load(f)
 
