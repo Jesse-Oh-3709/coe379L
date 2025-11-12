@@ -13,7 +13,7 @@ model = tf.keras.models.load_model(MODEL_PATH, compile=False)
 with open(SUMMARY_PATH, "r") as f:
     model_summary = json.load(f)
 
-IMG_SIZE = (150, 150)   
+IMG_SIZE = (128, 128)
 CLASS_NAMES = ["no_damage", "damage"]
 
 @app.route("/summary", methods=["GET"])
