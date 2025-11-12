@@ -1,0 +1,13 @@
+{
+  "best_model_name": "alt_lenet5_paper",
+  "img_size": [
+    128,
+    128
+  ],
+  "channels": 3,
+  "class_names": [
+    "damage",
+    "no_damage"
+  ],
+  "framework": "tensorflow-keras"
+}
